@@ -1,0 +1,480 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tenor Sans';
+}
+
+.cont {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('TenorSans.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo {
+    font-size: 31px;
+}
+
+.nav a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.nav a:hover {
+    border-bottom: 3px solid black;
+    border-radius: 2px;
+}
+
+.header {
+    padding: 35px 0;
+    display: flex;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero img{
+    max-width: 630px;
+    min-width: auto;
+    height: 630px;
+    border-radius: 70px;
+}
+
+.hero h2{
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+.hero p{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.hero p:last-child{
+    text-align: center;
+    color: #5D5D5D;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.but1{
+    width: 420px;
+    height: 67px;
+    border-radius: 100px;
+    border: 0px;
+    font-size: 25px;
+    background-color: #2B2B2B;
+    color: white;
+    cursor: pointer;
+}
+
+.but1:hover{
+    background-color: #797878;
+}
+
+.but2{
+    width: 200px;
+    height: 68px;
+    border-radius: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    border-color: #353535;
+}
+
+.coment img{
+    width: 130px;
+    height: auto;
+    margin: 0 -20px;
+}
+
+.coment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slovo{
+    color: black;
+    font-size: 40px;
+}
+
+.back {
+    width: 100%;
+    height: 754px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 33%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+    padding-bottom: 80px;
+}
+
+/*Секция почему удобно*/
+
+.preimush{
+    margin-top: 70px;
+}
+
+.preimush h3{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.preimush .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.card p{
+    padding: 0;
+}
+
+.preimush span{
+    display: block;
+    font-size: 20px;
+}
+
+.preimush p{
+    display: block;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 15px;
+}
+
+/*Секция как работает*/
+
+.kak {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.png{
+    display: flex;
+    justify-content: end;
+}
+
+.png img{
+    max-width: 580px;
+    max-height: 560px;
+    border-radius: 60px;
+}
+
+.description{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.description h4 {
+    font-size: 55px;
+    font-weight: 400;
+}
+
+.description span{
+    font-size: 45px;
+}
+
+.description p{
+    font-size: 30px;
+    padding: 0;
+}
+
+.block2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: relative;
+    left: 53px;
+}
+
+.circle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    background-color: #2B2B2B;
+    border-radius: 50px;
+    left: -50px;
+    top: 7px;
+}
+
+.block2:nth-of-type(2) .circle,
+.block2:nth-of-type(3) .circle,
+.block2:nth-of-type(4) .circle {
+    background-color: #AEAEAE;
+    color: black;
+}
+
+/*Секция меню*/
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu h5{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.menu .descr p{
+    font-size: 25px;
+    padding: 0;
+}
+
+.descr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.vse{
+    width: 100px;
+    height: 53px;
+    background-color: #2B2B2B;
+    color: white;
+    border-radius: 100px;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 23px;
+    margin: 30px auto 0 auto;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding-right: 20px;
+}
+
+.scroll span{
+    color: #717171;
+}
+
+.menu-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 60px;
+    margin: 35px 200px 0 200px;
+}
+
+.menu-card img{
+    width: 306px;
+    height: 199px;
+}
+
+.menu-card .cards:nth-of-type(2) img{
+    width: 306px;
+    height: 204px;
+}
+
+.menu-card .cards{
+    background: #2C2C2C;
+    border-radius: 30px;
+    padding-bottom: 15px;
+}
+
+.menu-card span{
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
+.menu-card p{
+    font-size: 12px;
+    color: #B5B5B5;
+}
+
+.menu-card .spec{
+    font-size: 15px;
+    color: #D3CFCF;
+}
+
+.menu-card span, p, .spec{
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+/*Секция тарифы*/
+
+.tarif{
+    width: 1400px;
+    height: 574px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px white;
+}
+
+.tarif .descr2 p{
+    font-size: 25px;
+    padding: 0px;
+}
+
+.descr2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.tarif h6{
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.tarif-card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 50px;
+}
+
+.tarif-card .cardss{
+    background: #E0E0E0;
+    border: #5C5C5C solid 1px;
+    border-radius: 20px;
+}
+
+.tarif-card .cardss2{
+    background: #2C2C2C;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px black;
+}
+
+.tarif-card .cardss3{
+    background: #E0E0E0;
+    border: #5C5C5C solid 1px;
+    border-radius: 20px;
+}
+
+.cardss p, .cardss2 p, .cardss3 p{
+    padding: 0;
+    line-height: 23px;
+}
+
+.cardss{
+    padding: 20px 10px 20px 35px;
+    width: 329px;
+    height: 319px;
+}
+
+.cardss2 {
+    padding: 23px 10px 20px 35px;
+    width: 329px;
+    height: 319px;
+    color: white;
+}
+
+.cardss3 {
+    padding: 20px 10px 20px 30px;
+    width: 329px;
+    height: 319px;
+}
+
+.cards-slovo1{
+    font-size: 25px;
+}
+
+.cardss2 .cards-slovo1{
+    font-size: 20px;
+}
+
+.cards-slovo2{
+    display: block;
+    margin: 14px 0 14px 10px;
+    font-size: 25px;
+}
+
+.cardss3 .cards-slovo1{
+    margin-right: 4px;
+}
+
+.cardss .cards-slovo1{
+    margin-left: 13px;
+}
+
+.cardss3 .cards-slovo2{
+    display: block;
+    margin: 14px 0 14px 14px;
+    font-size: 25px;
+}
+
+.rubl{
+    font-size: 35px;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper button{
+    width: 124px;
+    height: 30px;
+    margin: 10px 0 0 -15px;
+    background-color: #2B2B2B;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.cardss2 .btn-wrapper button{
+    width: 124px;
+    height: 30px;
+    margin: 13px 0 0 -15px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-size: 10px;
+}
+
+
